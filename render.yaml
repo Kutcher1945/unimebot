@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: aiogram-faq-bot
+    env: python
+    buildCommand: ""
+    startCommand: python -m bot.main
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_BOT_TOKEN_HERE
